@@ -46,7 +46,7 @@ const Index = () => {
 
             
             <Box sx={{ flexGrow: 1 }}>
-                <Grid  xs={12} sx={{ pb:2 }}>
+                <Grid   sx={{ pb:2 }}>
                      <Typography sx={{ textAlign:'center' }} variant="h4">
                         <b>- Now Playing -</b>
                     </Typography>

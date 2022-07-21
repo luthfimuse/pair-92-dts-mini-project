@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -21,7 +21,7 @@ const Detail = () => {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState(null)
 
-    const handleData = async () => {
+    const handleData = useCallback(async () => {
         const url = process.env.REACT_APP_MOVIE_URL
         const api_key = process.env.REACT_APP_MOVIE_TOKEN
         const response = await fetch(`${url}/movie/${id}?api_key=${api_key}`)
@@ -29,7 +29,7 @@ const Detail = () => {
 
         setData(results)
         setLoading(false)
-    }
+    }, [id])
 
     useEffect(() => {
         let subscribe = true;
@@ -39,9 +39,10 @@ const Detail = () => {
         }
 
         return () => {
+            console.log('ap')
             subscribe = false;
         }
-    }, [id])
+    }, [handleData])
 
 
   return (
