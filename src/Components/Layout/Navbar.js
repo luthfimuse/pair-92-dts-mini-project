@@ -92,10 +92,10 @@ function DrawerAppBar(props) {
             <Button href={`/movie/top-rated`} sx={{ color: '#fff' }}>
               TOP RATED
             </Button>
-            <Button variant="outlined" size="medium" sx={{ backgroundColor: 'white', borderColor: 'orange' , color: '#1876D2', ml:3, mr:1 }}>
+            <Button href={`/login`} variant="outlined" size="medium" sx={{ backgroundColor: 'white', borderColor: 'orange' , color: '#1876D2', ml:3, mr:1 }}>
               <b>Login</b>
             </Button>
-            <Button variant="outlined" size="medium" sx={{ backgroundColor: 'white', borderColor: 'orange' , color: '#1876D2', mr:1 }}>
+            <Button href={`/register`} variant="outlined" size="medium" sx={{ backgroundColor: 'white', borderColor: 'orange' , color: '#1876D2', mr:1 }}>
               <b>Register</b>
             </Button>
 

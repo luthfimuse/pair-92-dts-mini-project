@@ -14,6 +14,10 @@ import Popular from './Pages/Movie/Popular';
 import TopRated from './Pages/Movie/TopRated';
 import Upcoming from './Pages/Movie/Upcoming';
 
+import Login from './Pages/Auth/Login';
+import Register from './Pages/Auth/Register';
+
+
 function App() {
   
 
@@ -49,7 +53,17 @@ function App() {
             path = '/movie/top-rated'
             element = { < TopRated /> }
             />
-          
+
+            < Route
+            name = "top-rated"
+            path = '/login'
+            element = { < Login /> }
+            />
+            < Route
+            name = "top-rated"
+            path = '/register'
+            element = { < Register /> }
+            />
            
         </Routes>
         </Container>

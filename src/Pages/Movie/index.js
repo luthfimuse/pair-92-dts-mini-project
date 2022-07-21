@@ -48,23 +48,24 @@ const Index = () => {
 
             
             <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={2}>
-                <Grid item xs={12} sx={{ pb:2 }}>
+                <Grid  xs={12} sx={{ pb:2 }}>
                      <Typography sx={{ textAlign:'center' }} variant="h4">
                         <b>- Now Playing -</b>
                     </Typography>
                      <Divider sx={{ pt:2 }}/>
                 </Grid>
+                <Grid container spacing={2}>
+                
             {data.results.map((item, index) => {
                 return (
                 
-                <Grid item xs={3} sx={{ p:2 }} key={index}>
-                <Card sx={{ maxWidth: 345 }} >
+                <Grid item xs={12} md={3} xl={3} sx={{ p:2 }} key={index}>
+                <Card >
                     <CardMedia
                         component="img"
                         height="140"
                         image={`https://image.tmdb.org/t/p/original/${item.poster_path}?api_key=2a63e0839bd2e98bec62754b647863b4`}
-                        alt="x"
+                        alt={item.title}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="button" component="div">

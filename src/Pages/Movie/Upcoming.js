@@ -56,8 +56,8 @@ const Index = () => {
             
             {data.results.map((item, index) => {
                 return (
-                <Grid item xs={3} sx={{ p:2 }} key={index}>
-                <Card sx={{ maxWidth: 345 }} >
+                <Grid item xs={12} md={3} xl={3} sx={{ p:2 }} key={index}>
+                <Card>
                     <CardMedia
                         component="img"
                         height="140"
