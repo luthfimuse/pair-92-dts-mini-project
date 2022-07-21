@@ -1,25 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { styled } from '@mui/material/styles';
+import React from 'react'
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import { Badge, Button, Divider, Fab } from '@mui/material';
+import { Button, Divider } from '@mui/material';
 import { Box } from '@mui/system';
 
 import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
-import Autocomplete from '@mui/material/Autocomplete';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 
-const Img = styled('img')({
-  margin: 'auto',
-  display: 'block',
-  maxWidth: '100%',
-  maxHeight: '100%',
-});
-const shapeStyles = { bgcolor: 'primary.main', width: 40, height: 40 };
-const shapeCircleStyles = { borderRadius: '50%' };
-const rectangle = <Box component="span" sx={shapeStyles} />;
 
 const Login = () => {
 

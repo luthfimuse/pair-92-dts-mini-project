@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
-import { Badge, Divider, Fab } from '@mui/material';
+import { Badge, Divider } from '@mui/material';
 import { Box } from '@mui/system';
 
 const Img = styled('img')({
@@ -14,9 +14,7 @@ const Img = styled('img')({
   maxWidth: '100%',
   maxHeight: '100%',
 });
-const shapeStyles = { bgcolor: 'primary.main', width: 40, height: 40 };
-const shapeCircleStyles = { borderRadius: '50%' };
-const rectangle = <Box component="span" sx={shapeStyles} />;
+
 
 const Detail = () => {
     const {id} = useParams()
